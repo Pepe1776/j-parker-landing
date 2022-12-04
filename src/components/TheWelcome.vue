@@ -1,6 +1,6 @@
 <template>
   <div class="img-cont">
-<img src="../assets/SAtoshi_art.png" alt="satoshi shiba inu" class="image satoshi"/>
+<img src="../assets/SAtoshi_art.png" alt="satoshi shiba inu" class="img satoshi"/>
   </div>
 </template>
 
@@ -10,20 +10,19 @@
 
 <style scoped>
 .img-cont {
-  position: relative;
-  inset: 0;
-  width: 30vw;
-  height: auto;
+width: 100vw;
+height: 100vh;
+inset: 0;
 }
 
 .img {
-  width: 100%;
+  width: 30%;
   height: auto;
-  object-fit:  cover;
-  opacity: 0.2;
-  left: 0;
-  bottom: 0;
+  object-fit: contain;
   position: fixed;
+  left: 0;
+  bottom: 3%;
+  opacity: 0.2;
 }
 
 
