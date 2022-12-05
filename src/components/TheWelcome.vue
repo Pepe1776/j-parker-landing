@@ -6,7 +6,9 @@
   </div>
   <header>
     <transition name-="slide-fade">
-    <img v-show="cue1" src="../assets/Jparker.png" alt="jparker" class="name">
+      <div v-show="cue1" class="name-cont">
+    <h1 class="name-cap">J</h1><h1 class="name-low">ustin</h1><h1 class="name-cap2">P</h1><h1 class="name-low2">arker</h1>
+  </div>
   </transition>
   <transition name="slide-fade">
     <h2 v-show="cue2" class="sub">Software Engineer, Automation Programmer, UI Designer</h2>
@@ -57,11 +59,44 @@ inset: 0;
   border-radius: 40%;
   box-shadow: 0px 0px 15px rgba(59, 58, 58, 0.354);
 }
-
-.name {
+.name-cont {
+  width: 100%;
+  position: relative;
+}
+.name-low {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 3rem;
   position: absolute;
   z-index: 2;
   margin-top: -40%;
+  left: 1%;
+  opacity: 0.3;
+}
+.name-low2 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 3rem;
+  position: absolute;
+  z-index: 2;
+  margin-top: -40%;
+  left: 15%;
+  opacity: 0.3;
+}
+.name-cap {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 8rem;
+  position: absolute;
+  z-index: 2;
+  margin-top: -45.5%;
+  left: -2%;
+  opacity: 0.3;
+}
+.name-cap2 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 8rem;
+  position: absolute;
+  z-index: 2;
+  margin-top: -45.5%;
+  left: 12%;
   opacity: 0.3;
 }
 .sub {
