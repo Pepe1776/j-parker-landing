@@ -1,20 +1,20 @@
 <template>
   <div class="img-cont">
     <transition name="slide-fade">
-<img v-show="cue3" src="../assets/jparker_self.png" alt="satoshi shiba inu" class="img satoshi"/>
+<img v-show="cue4" src="../assets/jparker_self.png" alt="satoshi shiba inu" class="img satoshi"/>
 </transition>
   </div>
   <header>
     <transition name-="slide-fade">
-      <div v-show="cue1" class="name-cont">
-    <h1 class="name-cap">J</h1><h1 class="name-low">ustin</h1><h1 class="name-cap2">P</h1><h1 class="name-low2">arker</h1>
+      <div class="name-cont">
+    <h1 v-show="cue1" class="name-cap">J</h1><h1 v-show="cue2" class="name-low">ustin</h1><h1 v-show="cue3" class="name-cap2">P</h1><h1 v-show="cue4" class="name-low2">arker</h1>
   </div>
   </transition>
   <transition name="slide-fade">
-    <h2 v-show="cue2" class="sub">Software Engineer, Automation Programmer, UI Designer</h2>
+    <h2 v-show="cue4" class="sub">Software Engineer|Automation Programmer|UI Designer</h2>
   </transition>
   <transition name="slide-fade">
-  <button v-show="cue4" class="btn">Browse Work</button>
+    
 </transition>
   </header>
 </template>
@@ -32,13 +32,13 @@ setTimeout(() => {
 }, 500);
 setTimeout(() => {
   cue2.value = true;
-}, 800);
+}, 1000);
 setTimeout(() => {
   cue3.value = true;
-}, 2000);
+}, 1500);
 setTimeout(() => {
   cue4.value = true
-}, 3000);
+}, 2000);
 </script>
 
 <style scoped>
@@ -57,68 +57,70 @@ inset: 0;
   bottom: 15%;
   opacity: 0.2;
   border-radius: 40%;
-  box-shadow: 0px 0px 15px rgba(59, 58, 58, 0.354);
+  box-shadow: -5px 5px 18px rgba(1, 161, 224, 0.75);
 }
 .name-cont {
   width: 100%;
   position: relative;
 }
 .name-low {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 3rem;
   position: absolute;
   z-index: 2;
-  margin-top: -40%;
-  left: 1%;
-  opacity: 0.3;
-}
+  margin-top: -30%;
+  left: 1.5%;
+  color: rgb(25, 25, 25);
+  text-shadow: -5px 5px 18px rgba(1, 161, 224, 0.75);}
 .name-low2 {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 3rem;
   position: absolute;
   z-index: 2;
-  margin-top: -40%;
-  left: 15%;
-  opacity: 0.3;
-}
+  margin-top: -30%;
+  left: 16.5%;
+  color: rgb(25, 25, 25);
+  text-shadow: -5px 5px 18px rgba(1, 161, 224, 0.75);}
 .name-cap {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 8rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 25rem;
+  font-weight: 100;
   position: absolute;
   z-index: 2;
-  margin-top: -45.5%;
-  left: -2%;
-  opacity: 0.3;
+  margin-top: -55%;
+  left: -8%;
+  color: rgb(25, 25, 25);
+  text-shadow: -5px 5px 18px rgba(1, 161, 224, 0.75);
 }
 .name-cap2 {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 8rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 25rem;
   position: absolute;
   z-index: 2;
-  margin-top: -45.5%;
-  left: 12%;
-  opacity: 0.3;
-}
+  margin-top: -55%;
+  left: 10%;
+  color: rgb(25, 25, 25);
+  text-shadow: -5px 5px 18px rgba(1, 161, 224, 0.75);}
 .sub {
   position: absolute;
   z-index: 2;
-  margin-top: -28%;
-  margin-left: -4%;
-  opacity: 0.3;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
+  margin-top: -23%;
+  margin-left: -10.5%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.7rem;
+  color: rgb(25, 25, 25);
+  text-shadow: -5px 5px 15px rgb(1, 161, 224);}
 .btn {
   position: absolute;
   z-index: 2;
-  margin-top: -22%;
-  margin-left: 6.5%;
-  opacity: 0.3;
-  box-shadow: 0px 0px 15px rgba(59, 58, 58, 0.354);
-  color: aliceblue;
-  background-color: rgba(59, 58, 58, 0.354);
+  margin-top: -28%;
+  margin-left: 4.5%;
+  box-shadow: -15px 5px 18px rgba(129, 0, 176, 0.399);
+  color: rgba(115, 4, 155, 0.435);
+  background-color: rgba(25,25,25);
   padding: 20px;
   font-size: x-large;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   border-radius: 10%;
 }
 .slide-fade-enter-active {

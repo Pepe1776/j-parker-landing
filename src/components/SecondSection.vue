@@ -24,6 +24,6 @@ inset: 0;
   bottom: 5%;
   opacity: 0.2;
   border-radius: 40%;
-  box-shadow: 0px 0px 15px rgba(59, 58, 58, 0.354);
+  box-shadow: -5px 5px 18px rgba(1, 161, 224, 0.75);
 }
 </style>
