@@ -14,7 +14,7 @@
     <h2 v-show="cue4" class="sub">Software Engineer|Automation Programmer|UI Designer</h2>
   </transition>
   <transition name="slide-fade">
-    
+
 </transition>
   </header>
 </template>
