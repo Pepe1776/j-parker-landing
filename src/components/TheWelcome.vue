@@ -1,17 +1,17 @@
 <template>
   <div class="img-cont">
     <transition name="slide-fade">
-<img v-show="cue4" src="../assets/jparker_self.png" alt="satoshi shiba inu" class="img satoshi"/>
+<img v-show="cue2" src="../assets/jparker_self.png" alt="satoshi shiba inu" class="img satoshi"/>
 </transition>
   </div>
   <header>
     <transition name-="slide-fade">
       <div class="name-cont">
-    <h1 v-show="cue1" class="name-cap">J</h1><h1 v-show="cue2" class="name-low">ustin</h1><h1 v-show="cue3" class="name-cap2">P</h1><h1 v-show="cue4" class="name-low2">arker</h1>
-  </div>
+<img v-show="cue1" class="name-cap" src="../assets/jp_white.png" alt="">
+      </div>
   </transition>
   <transition name="slide-fade">
-    <h2 v-show="cue4" class="sub">Software Engineer|Automation Programmer|UI Designer</h2>
+    <h2 v-show="cue3" class="sub">Software Engineer|Automation Programmer|UI Designer</h2>
   </transition>
   <transition name="slide-fade">
 
@@ -54,62 +54,33 @@ inset: 0;
   object-fit: contain;
   position: absolute;
   left: 35%;
-  bottom: 15%;
+  bottom: 12%;
   opacity: 0.2;
   border-radius: 40%;
-  box-shadow: -5px 5px 18px rgba(1, 161, 224, 0.75);
+  box-shadow: -5px 5px 18px rgb(1, 183, 255);
 }
 .name-cont {
   width: 100%;
   position: relative;
 }
-.name-low {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 3rem;
-  position: absolute;
-  z-index: 2;
-  margin-top: -30%;
-  left: 1.5%;
-  color: rgb(25, 25, 25);
-  text-shadow: -5px 5px 18px rgba(1, 161, 224, 0.75);}
-.name-low2 {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 3rem;
-  position: absolute;
-  z-index: 2;
-  margin-top: -30%;
-  left: 16.5%;
-  color: rgb(25, 25, 25);
-  text-shadow: -5px 5px 18px rgba(1, 161, 224, 0.75);}
+
 .name-cap {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 25rem;
-  font-weight: 100;
+  width: 45%;
   position: absolute;
   z-index: 2;
-  margin-top: -55%;
-  left: -8%;
-  color: rgb(25, 25, 25);
-  text-shadow: -5px 5px 18px rgba(1, 161, 224, 0.75);
+  margin-top: -42%;
+  left: -11%;
+  opacity: 0.6;
 }
-.name-cap2 {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 25rem;
-  position: absolute;
-  z-index: 2;
-  margin-top: -55%;
-  left: 10%;
-  color: rgb(25, 25, 25);
-  text-shadow: -5px 5px 18px rgba(1, 161, 224, 0.75);}
 .sub {
   position: absolute;
   z-index: 2;
   margin-top: -23%;
-  margin-left: -10.5%;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 1.7rem;
-  color: rgb(25, 25, 25);
-  text-shadow: -5px 5px 15px rgb(1, 161, 224);}
+  margin-left: -14%;
+  font-family: 'raleway', serif;
+  font-size: 1.8rem;
+  color: rgb(105, 105, 105);
+  text-shadow: 0px 0px 25px rgb(1, 183, 255);}
 .btn {
   position: absolute;
   z-index: 2;
