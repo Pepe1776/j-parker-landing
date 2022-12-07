@@ -42,4 +42,19 @@
     text-shadow: 0px 0px 18px rgb(1, 56, 255);
 
 }
+@keyframes flicker {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.flickering-element {
+  animation: flicker 20s infinite;
+}
 </style>
