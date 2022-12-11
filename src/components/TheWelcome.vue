@@ -7,7 +7,7 @@
   <header>
     <transition name-="slide-fade">
       <div class="name-cont">
-<img v-show="cue1" class="name-cap" src="../assets/jp_white.png" alt="">
+<img v-show="cue1" class="name-cap" src="../assets/jp_white.png" alt="JParker">
       </div>
   </transition>
   <transition name="slide-fade">
