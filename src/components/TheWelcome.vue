@@ -14,7 +14,7 @@
     <h2 v-show="cue3" class="sub">Software Engineer | Automation Programmer | UI Designer</h2>
   </transition>
   <transition name="slide-fade">
-
+    <img v-show="cue4" src="../assets/Shiba Work.png" alt="satoshi shiba inu" class="img satoshi"/>
 </transition>
   </header>
 </template>
@@ -37,8 +37,11 @@ setTimeout(() => {
   cue3.value = true;
 }, 1500);
 setTimeout(() => {
-  cue4.value = true
-}, 2000);
+  cue2.value = false
+}, 5000);
+setTimeout(() => {
+  cue4. value = true
+}, 5000);
 </script>
 
 <style scoped>
@@ -53,7 +56,7 @@ inset: 0;
   height: auto;
   object-fit: contain;
   position: absolute;
-  left: 25%;
+  left: 15%;
   bottom: 12%;
   opacity: 0.2;
   border-radius: 40%;
@@ -69,14 +72,14 @@ inset: 0;
   position: absolute;
   z-index: 2;
   margin-top: -42%;
-  left: -20%;
+  left: -30%;
   opacity: 0.6;
 }
 .sub {
   position: absolute;
   z-index: 2;
   margin-top: -23%;
-  margin-left: -24%;
+  margin-left: -34%;
   font-family: 'raleway', serif;
   font-size: 1.8rem;
   color: rgb(105, 105, 105);

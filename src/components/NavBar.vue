@@ -1,7 +1,9 @@
 <template>
     <div class="nav-cont">
+      <router-link to="/" class="nav">Home</router-link>
 <a class="nav" href="mailto:justinp@aevio.com">Email</a>
 <router-link to="/about" class="nav">Socials</router-link>
+
     </div>
 </template>
 
@@ -18,7 +20,7 @@
     gap: 5rem;
     inset: 0;
     top: 1%;
-    left: -60%;
+    left: -40%;
 
 }
 
