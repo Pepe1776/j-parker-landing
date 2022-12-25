@@ -1,7 +1,7 @@
 <template>
   <div class="img-cont">
     <transition name="slide-fade">
-<img v-show="cue2" src="../assets/jparker_self.png" alt="satoshi shiba inu" class="img satoshi"/>
+<img v-show="cue2" src="../assets/DALL·E 2022-12-11 19.55.55 -  Black Shiba Inu as king of space in a paiting.png" alt="satoshi shiba inu" class="img satoshi"/>
 </transition>
   </div>
   <header>
@@ -14,7 +14,7 @@
     <h2 v-show="cue3" class="sub">Software Engineer | Automation Programmer | UI Designer</h2>
   </transition>
   <transition name="slide-fade">
-    <img v-show="cue4" src="../assets/Shiba Work.png" alt="satoshi shiba inu" class="img satoshi"/>
+    <img v-show="cue4" src="../assets/shiba1.jpg" alt="satoshi shiba inu" class="img satoshi"/>
 </transition>
   </header>
 </template>
@@ -36,12 +36,8 @@ setTimeout(() => {
 setTimeout(() => {
   cue3.value = true;
 }, 1500);
-setTimeout(() => {
-  cue2.value = false
-}, 5000);
-setTimeout(() => {
-  cue4. value = true
-}, 5000);
+
+
 </script>
 
 <style scoped>
