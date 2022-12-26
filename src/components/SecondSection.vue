@@ -19,15 +19,19 @@
 width: 100vw;
 height: 100vh;
 inset: 0;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 .img2 {
   width: 40%;
   height: auto;
   object-fit: contain;
-  position: absolute;
-  left: -30%;
-  bottom: 5%;
+  left: -14%;
+  display: flex;
+justify-content: center;
+align-items: center;
   opacity: 0.2;
   border-radius: 40%;
   box-shadow: -5px 5px 18px rgba(1, 161, 224, 0.75);
@@ -38,10 +42,12 @@ inset: 0;
   color: rgb(105, 105, 105);
   text-shadow: 0px 0px 25px rgb(1, 183, 255);
   line-height: 5rem;
+  text-align: center;
 }
  .sub_list {
  position: absolute;
- left: 20%;
- bottom: 15%;
+ left: 17%;
+ bottom: -20%;
+ padding: 5%;
 }
 </style>

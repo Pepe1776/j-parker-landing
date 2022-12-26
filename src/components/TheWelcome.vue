@@ -42,6 +42,9 @@ setTimeout(() => {
 
 <style scoped>
 .img-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 width: 100vw;
 height: 100vh;
 inset: 0;
@@ -53,7 +56,7 @@ inset: 0;
   object-fit: contain;
   position: absolute;
   left: 15%;
-  bottom: 12%;
+  bottom: 20%;
   opacity: 0.2;
   border-radius: 40%;
   box-shadow: -5px 5px 18px rgb(1, 183, 255);
@@ -61,25 +64,35 @@ inset: 0;
 .name-cont {
   width: 100%;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .name-cap {
+  justify-content: center;
+  align-items: center;
   width: 45%;
   position: absolute;
   z-index: 2;
-  margin-top: -42%;
-  left: -30%;
+  margin-top: -45%;
+  left: 17%;
   opacity: 0.6;
 }
 .sub {
   position: absolute;
   z-index: 2;
-  margin-top: -23%;
-  margin-left: -34%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: 'raleway', serif;
   font-size: 1.8rem;
   color: rgb(105, 105, 105);
-  text-shadow: 0px 0px 25px rgb(1, 183, 255);}
+  text-shadow: 0px 0px 25px rgb(1, 183, 255);
+  margin-top: -5%;
+  margin-left: 12%;
+}
+  
 .btn {
   position: absolute;
   z-index: 2;
