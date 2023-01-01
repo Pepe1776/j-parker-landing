@@ -4,7 +4,7 @@
 <img v-show="cue2" src="../assets/DALL·E 2022-12-11 19.55.55 -  Black Shiba Inu as king of space in a paiting.png" alt="satoshi shiba inu" class="img satoshi"/>
 </transition>
   </div>
-  <img class="img2" src="../assets/vecteezy_abstract-white-and-grey-background-texture_6033460.png" />
+  <video autoplay muted loop class="img2"> <source src="../assets/Grid - 82515.mp4" type="video/mp4" /></video>
   <header>
     <transition name-="slide-fade">
       <div class="name-cont">
@@ -116,13 +116,12 @@ setTimeout(() => {
 }
 
 .img2 {
-  position: absolute;
+  position: fixed;
   z-index: -1;
   inset: 0;
-  width: 100vw;
-  height: 100vh;
-  object-fit: contain;
-  opacity: 0.03;
+  width: 100VW;
+  height: auto;
+  opacity: 0.05;
 }
 
 .slide-fade-enter-active {
@@ -144,8 +143,5 @@ setTimeout(() => {
       margin-left: inherit
     }
     
-    .name-cap {
-     
-    }
 }
 </style>
