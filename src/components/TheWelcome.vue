@@ -4,15 +4,18 @@
 <img v-show="cue2" src="../assets/DALL·E 2022-12-11 19.55.55 -  Black Shiba Inu as king of space in a paiting.png" alt="satoshi shiba inu" class="img satoshi"/>
 </transition>
   </div>
+  <img class="img2" src="../assets/vecteezy_abstract-white-and-grey-background-texture_6033460.png" />
   <header>
     <transition name-="slide-fade">
       <div class="name-cont">
 <img v-show="cue1" class="name-cap" src="../assets/jp_white.png" alt="JParker">
       </div>
   </transition>
+  <div class="sub-cont">
   <transition name="slide-fade">
     <h2 v-show="cue3" class="sub">Software Engineer | Automation Programmer | UI Designer</h2>
   </transition>
+</div>
   <transition name="slide-fade">
     <img v-show="cue4" src="../assets/shiba1.jpg" alt="satoshi shiba inu" class="img satoshi"/>
 </transition>
@@ -60,9 +63,9 @@ setTimeout(() => {
   opacity: 0.2;
   border-radius: 40%;
   box-shadow: -5px 5px 18px rgb(1, 183, 255);
+  
 }
 .name-cont {
-  width: 100%;
   position: relative;
   display: flex;
   justify-content: center;
@@ -72,15 +75,20 @@ setTimeout(() => {
 .name-cap {
   justify-content: center;
   align-items: center;
-  width: 45%;
+  width: 45vw;
   position: absolute;
   z-index: 2;
   margin-top: -15%;
-  left: 30%;
+  left: 31%;
   opacity: 0.6;
 }
-.sub {
 
+.sub-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sub {
   z-index: 2;
   display: flex;
   justify-content: center;
@@ -106,6 +114,17 @@ setTimeout(() => {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   border-radius: 10%;
 }
+
+.img2 {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: contain;
+  opacity: 0.03;
+}
+
 .slide-fade-enter-active {
   transition: all 0.6s ease-out;
 }
@@ -121,12 +140,12 @@ setTimeout(() => {
 
 @media screen and (max-width: 1100px) {
 
-    .sub {
-      display: none;
+    .img {
+      margin-left: inherit
     }
     
     .name-cap {
-      display: none;
+     
     }
 }
 </style>
