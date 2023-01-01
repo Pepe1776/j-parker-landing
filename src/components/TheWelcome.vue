@@ -45,18 +45,18 @@ setTimeout(() => {
   display: flex;
   justify-content: center;
   align-items: center;
-width: 100vw;
-height: 100vh;
-inset: 0;
+  width: 100vw;
+  height: auto;
+  margin-top: 5%;
 }
 
 .img {
-  width: 40%;
+  width: 40vw;
   height: auto;
   object-fit: contain;
-  position: absolute;
-  left: 15%;
-  bottom: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   opacity: 0.2;
   border-radius: 40%;
   box-shadow: -5px 5px 18px rgb(1, 183, 255);
@@ -75,22 +75,22 @@ inset: 0;
   width: 45%;
   position: absolute;
   z-index: 2;
-  margin-top: -45%;
-  left: 17%;
+  margin-top: -15%;
+  left: 30%;
   opacity: 0.6;
 }
 .sub {
-  position: absolute;
+
   z-index: 2;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: 'raleway', serif;
-  font-size: 1.8rem;
+  font-size: 1.8vw;
   color: rgb(105, 105, 105);
   text-shadow: 0px 0px 25px rgb(1, 183, 255);
-  margin-top: -5%;
-  margin-left: 12%;
+  margin-top: 5%;
+
 }
   
 .btn {
@@ -117,5 +117,16 @@ inset: 0;
   transform: translateX(80px);
   transform: translateY(40px);
   opacity: 0;
+}
+
+@media screen and (max-width: 1100px) {
+
+    .sub {
+      display: none;
+    }
+    
+    .name-cap {
+      display: none;
+    }
 }
 </style>
