@@ -11,3 +11,10 @@ import SecondSection from '../components/SecondSection.vue';
     <SecondSection />
   </main>
 </template>
+
+<style>
+main {
+  width: 75vw;
+}
+
+</style>

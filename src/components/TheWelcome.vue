@@ -48,7 +48,7 @@ setTimeout(() => {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   height: auto;
   margin-top: 5%;
 }
@@ -78,8 +78,8 @@ setTimeout(() => {
   width: 45vw;
   position: absolute;
   z-index: 2;
-  margin-top: -15%;
-  left: 31%;
+  margin-top: -19%;
+  left: 25%;
   opacity: 0.6;
 }
 
@@ -121,7 +121,7 @@ setTimeout(() => {
   inset: 0;
   width: 100VW;
   height: auto;
-  opacity: 0.05;
+  opacity: 0.1;
 }
 
 .slide-fade-enter-active {
@@ -142,6 +142,8 @@ setTimeout(() => {
     .img {
       margin-left: inherit
     }
-    
+    video {
+      display: none;
+    }
 }
 </style>

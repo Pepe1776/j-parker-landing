@@ -16,7 +16,7 @@
 
 <style scoped>
 .img2-cont {
-  width: 100vw;
+  width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
