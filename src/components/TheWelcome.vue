@@ -4,7 +4,7 @@
 <img v-show="cue2" src="../assets/DALLE1.png" alt="satoshi shiba inu" class="img satoshi"/>
 </transition>
   </div>
-  <video autoplay muted loop class="img2"> <source src="../assets/Grid - 82515.mp4" type="video/mp4" /></video>
+  <video autoplay muted loop class="img2"> <source src="../assets/Grid.mp4" type="video/mp4" /></video>
   <header>
     <transition name-="slide-fade">
       <div class="name-cont">
