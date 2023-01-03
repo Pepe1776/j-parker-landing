@@ -1,7 +1,7 @@
 <template>
   <div class="img-cont">
     <transition name="slide-fade">
-<img v-show="cue2" src="../assets/DALL·E 2022-12-11 19.55.55 -  Black Shiba Inu as king of space in a paiting.png" alt="satoshi shiba inu" class="img satoshi"/>
+<img v-show="cue2" src="../assets/DALLE1.png" alt="satoshi shiba inu" class="img satoshi"/>
 </transition>
   </div>
   <video autoplay muted loop class="img2"> <source src="../assets/Grid - 82515.mp4" type="video/mp4" /></video>

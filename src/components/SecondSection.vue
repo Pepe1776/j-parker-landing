@@ -1,6 +1,6 @@
 <template>
     <div class="img2-cont">
-<img src="../assets/DALL·E 2022-12-18 16.55.27 - digital art of a shiba in vapor wave style.png" alt="satoshi" class="img2">
+<img src="../assets/DALLE2.png" alt="satoshi" class="img2">
     </div>
     <div class="sub_list">
     <div class="sub_text">Custom Crestron Interfaces</div>
