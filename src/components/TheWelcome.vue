@@ -142,8 +142,10 @@ setTimeout(() => {
     .img {
       margin-left: inherit
     }
-    video {
-      display: none;
+    .img2 {
+      height: 100vh;
+      width: auto;
     }
+  
 }
 </style>
