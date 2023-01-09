@@ -8,6 +8,7 @@
     <div class="sub_text t3">Integrated Cue Server DMX Projects</div>
     <div class="sub_text t4">Control4 Drivers in Lua Script</div>
   </div>
+  <a class="link" href="mailto:justinp@aevio.com">Link Up</a>
 </template>
 
 <script setup>
@@ -48,5 +49,26 @@
 }
  .sub_list {
   padding: 5%;
+}
+.link {
+  font-family: 'raleway', serif;
+  font-size: 3vw;
+  color: rgb(105, 105, 105);
+  text-shadow: 0px 0px 25px rgb(1, 183, 255);
+  line-height: 5vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+  cursor: pointer;
+  max-width: max-content;
+  right: -43%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+.link:hover {
+  background-color: rgba(255, 255, 255, 0);
+
 }
 </style>
