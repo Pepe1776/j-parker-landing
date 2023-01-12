@@ -2,7 +2,7 @@
     <div ref="myElement" class="animate-on-scroll img2-cont">
 <img src="../assets/DALLE2.png" alt="satoshi" class="img2">
     </div>
-    <div ref="myElement" class="animate-on-scroll sub_list">
+    <div class="sub_list">
     <div class="sub_text">Custom Crestron Interfaces</div>
     <div class="sub_text t2">Personalized Control Icons</div>
     <div class="sub_text t3">Integrated Cue Server DMX Projects</div>
