@@ -22,7 +22,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10%;
+  margin-top: 40%;
 }
 
 .img2 {
@@ -46,6 +46,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 5%;
 }
  .sub_list {
   padding: 5%;
@@ -64,11 +65,13 @@
   cursor: pointer;
   max-width: max-content;
   right: -43%;
+  margin-top: 30%;
   padding-top: 10%;
   padding-bottom: 10%;
 }
 .link:hover {
   background-color: rgba(255, 255, 255, 0);
+  color: rgb(139, 225, 247);
 
 }
 </style>
