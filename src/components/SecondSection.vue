@@ -1,8 +1,8 @@
 <template>
-    <div class="img2-cont">
+    <div ref="myElement" class="animate-on-scroll img2-cont">
 <img src="../assets/DALLE2.png" alt="satoshi" class="img2">
     </div>
-    <div class="sub_list">
+    <div ref="myElement" class="animate-on-scroll sub_list">
     <div class="sub_text">Custom Crestron Interfaces</div>
     <div class="sub_text t2">Personalized Control Icons</div>
     <div class="sub_text t3">Integrated Cue Server DMX Projects</div>
@@ -11,7 +11,31 @@
   <a class="link" href="mailto:justinp@aevio.com">Link Up</a>
 </template>
 
-<script setup>
+<script>
+import { ref } from 'vue'
+import { onMounted } from 'vue'
+
+export default {
+  setup() {
+    const myElement = ref(null)
+    let observer = null
+
+    onMounted(() => {
+      observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            myElement.value.classList.add("is-animated")
+          }
+        }, { threshold: 0.5 })
+      })
+      observer.observe(myElement.value)
+    })
+
+    return {
+      myElement
+    }
+  }
+}
     
 </script>
 
@@ -73,5 +97,19 @@
   background-color: rgba(255, 255, 255, 0);
   color: rgb(139, 225, 247);
 
+}
+
+.animate-on-scroll.is-animated {
+  /* Animate the element sliding in from the left */
+  animation: slideInFromLeft 1.5s ease-in-out;
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 </style>
