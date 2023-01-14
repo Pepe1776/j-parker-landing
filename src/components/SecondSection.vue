@@ -90,7 +90,7 @@ setTimeout(() => {
 }
 .link {
   font-family: 'raleway', serif;
-  font-size: 3vw;
+  font-size: 4vw;
   color: rgb(105, 105, 105);
   text-shadow: 0px 0px 25px rgb(1, 183, 255);
   line-height: 5vh;
@@ -101,7 +101,7 @@ setTimeout(() => {
   z-index: 15;
   cursor: pointer;
   max-width: max-content;
-  right: -43%;
+  right: -40%;
   margin-top: 30%;
   padding-top: 10%;
   padding-bottom: 10%;
