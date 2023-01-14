@@ -8,40 +8,48 @@
     <div class="sub_text t3">Integrated Cue Server DMX Projects</div>
     <div class="sub_text t4">Control4 Drivers in Lua Script</div>
   </div>
-  <div class="link" v-on:mouseover="showPopup = true">Link Up</div>
+  <div class="projects">
+    <div class="link" v-on:mouseover="showPopup2()">Projects</div>
+    <Transition name="fadein">
+      <a v-show="showPopup3" class="popup2" href="http://bookofrecipes.netilfy.app">Book Of Recipes</a>
+    </Transition>
+    <Transition name="fadein">
+      <a v-show="showPopup3" class="popup3" href="https://aevio-ch5.netlify.app/">Crestron HTML5</a>
+    </Transition>
+  </div>
+  <div class="link" v-on:mouseover="showPopup1()">Link Up</div>
   <div class="btn_cont_popup">
+    <Transition name="fadein" >
   <a   v-show="showPopup" class="popup" href="mailto:justinp@aevio.com">Email</a>
+</Transition>
 </div>
 </template>
 
-<script>
+<script setup>
 import { ref } from 'vue'
-import { onMounted } from 'vue'
 
 const showPopup = ref(false);
+const showPopup3 = ref(false);
 
-export default {
-  setup() {
-    const myElement = ref(null)
-    let observer = null
+//funciton to show popup for 5 seconds on mouseover
+function showPopup1 () {
+setTimeout(() => {
+  showPopup.value = true;
+}, 300);
+setTimeout(() => {
+  showPopup.value = false;
+}, 5000);
+};
+function showPopup2 () {
+setTimeout(() => {
+  showPopup3.value = true;
+}, 300);
+setTimeout(() => {
+  showPopup3.value = false;
+}, 5000);
+};
 
-    onMounted(() => {
-      observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            myElement.value.classList.add("is-animated")
-          }
-        }, { threshold: 0.5 })
-      })
-      observer.observe(myElement.value)
-    })
 
-    return {
-      myElement
-    }
-  }
-}
-    
 </script>
 
 <style scoped>
@@ -90,7 +98,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 5;
+  z-index: 15;
   cursor: pointer;
   max-width: max-content;
   right: -43%;
@@ -105,12 +113,55 @@ export default {
 }
 
 .popup {
+  font-family: 'raleway', serif;
+  font-size: 3vw;
+  color: rgb(105, 105, 105);
+  text-shadow: 0px 0px 25px rgb(1, 183, 255);
+  line-height: 5vh;
+  text-align: center;
   position: absolute;
-  bottom: 0;
-  left: 45%;
-  background-color: aliceblue;
+  bottom: 3rem;
+  z-index: 16;
   width: 100%;
   height: auto;
+  
+
+}
+.popup2 {
+  font-family: 'raleway', serif;
+  font-size: 3vw;
+  color: rgb(105, 105, 105);
+  text-shadow: 0px 0px 25px rgb(1, 183, 255);
+  line-height: 5vh;
+  text-align: center;
+  position: absolute;
+  bottom: 3rem;
+  z-index: 16;
+  width: 100%;
+  height: auto;
+  
+
+}
+.popup3 {
+  font-family: 'raleway', serif;
+  font-size: 3vw;
+  color: rgb(105, 105, 105);
+  text-shadow: 0px 0px 25px rgb(1, 183, 255);
+  line-height: 5vh;
+  text-align: center;
+  position: absolute;
+  bottom: -2rem;
+  z-index: 16;
+  width: 100%;
+  height: auto;
+  
+
+}
+.popup:hover,.popup2:hover,.popup3:hover {
+  background-color: rgba(255, 255, 255, 0);
+  color: rgb(139, 225, 247);
+  
+  
 }
 
 .animate-on-scroll.is-animated {
@@ -125,6 +176,10 @@ export default {
   to {
     transform: translateX(0);
   }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 </style>
