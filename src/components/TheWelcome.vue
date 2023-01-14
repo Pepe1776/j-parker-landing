@@ -19,12 +19,6 @@
   <transition name="slide-fade">
     <img v-show="cue4" src="../assets/shiba1.jpg" alt="satoshi shiba inu" class="img satoshi"/>
 </transition>
-<div class="btn_cont">
-<img src="../assets/list.png" class="menu_btn" v-on:mouseover="showPopup = true" v-on:mouseout="showPopup = false" />
-<div class="btn_cont_popup" v-on:mouseover="showPopup = true" v-on:mouseout="showPopup = false" v-show="showPopup">
-  <div>Scroll Down</div>
-</div>
-</div>
   </header>
 </template>
 
@@ -35,7 +29,7 @@ const cue1 = ref(false);
 const cue2 = ref(false);
 const cue3 = ref(false);
 const cue4 = ref(false);
-const showPopup = ref(false);
+
 
 setTimeout(() => {
   cue1.value = true;
@@ -147,40 +141,6 @@ setTimeout(() => {
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
-}
-
-
-.menu_btn {
-  width: 5%;
-  height: auto;
-  position: fixed;
-  top: 3%;
-  left: 3%;
-  transition: transform 0.5s; /* Add a transition effect */
-}
-.menu_btn:hover {
-  transform: rotate(90deg);
-}
-.btn-cont {
-  width: 100px;
-  height: 100px;
-  position: fixed;
-  top: 3%;
-  left: 3%;
-  background-color: rgb(1, 183, 255);
-  z-index: 3;
-}
-.btn_cont_popup {
-  position: fixed;
-  top: 15%;
-  left: 3%;
-  display: flex;
-  flex-direction: column;
-  gap: 3%;
-  font-size: 2rem;
-  color: rgba(255, 255, 255, 0.307);
-  text-shadow: 0px 0px 25px rgb(1, 183, 255);
-
 }
 
 @media screen and (max-width: 1100px) {

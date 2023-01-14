@@ -8,12 +8,17 @@
     <div class="sub_text t3">Integrated Cue Server DMX Projects</div>
     <div class="sub_text t4">Control4 Drivers in Lua Script</div>
   </div>
-  <a class="link" href="mailto:justinp@aevio.com">Link Up</a>
+  <div class="link" v-on:mouseover="showPopup = true">Link Up</div>
+  <div class="btn_cont_popup">
+  <a   v-show="showPopup" class="popup" href="mailto:justinp@aevio.com">Email</a>
+</div>
 </template>
 
 <script>
 import { ref } from 'vue'
 import { onMounted } from 'vue'
+
+const showPopup = ref(false);
 
 export default {
   setup() {
@@ -99,6 +104,15 @@ export default {
 
 }
 
+.popup {
+  position: absolute;
+  bottom: 0;
+  left: 45%;
+  background-color: aliceblue;
+  width: 100%;
+  height: auto;
+}
+
 .animate-on-scroll.is-animated {
   /* Animate the element sliding in from the left */
   animation: slideInFromLeft 1.5s ease-in-out;
@@ -112,4 +126,5 @@ export default {
     transform: translateX(0);
   }
 }
+
 </style>
