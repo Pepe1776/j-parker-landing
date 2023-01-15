@@ -22,12 +22,16 @@
       <a v-show="showPopup3" class="popup3" href="https://aevio-ch5.netlify.app/">Crestron HTML5</a>
     </Transition>
   </div>
+  <div class="img4_cont">
+  <img src="../assets/cybershiba2.png" alt="satoshi" class="img4" />
+</div>
   <div class="link" v-on:mouseover="showPopup1()">Link Up</div>
   <div class="btn_cont_popup">
     <Transition name="fadein" >
   <a   v-show="showPopup" class="popup" href="mailto:justinp@aevio.com">Email</a>
 </Transition>
 </div>
+
 </template>
 
 <script setup>
@@ -108,12 +112,36 @@ setTimeout(() => {
   margin-left: 22%;
   margin-top: 22%;
 }
+
+.img4-cont {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100%;
+}
+
+.img4 {
+  width: 40vw;
+  height: auto;
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.2;
+  border-radius: 40%;
+  box-shadow: -5px 5px 18px rgba(1, 161, 224, 0.75);
+  margin-left: 22%;
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
  .sub_text {
   font-family: 'raleway', serif;
   font-size: 1.8vw;
   color: rgb(105, 105, 105);
   text-shadow: 0px 0px 25px rgb(1, 183, 255);
-  line-height: 5vh;
+
   text-align: center;
   display: flex;
   align-items: center;
