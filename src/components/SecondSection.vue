@@ -16,7 +16,7 @@
   <div class="projects">
     <div class="link" v-on:mouseover="showPopup2()">Projects</div>
     <Transition name="fadein">
-      <a v-show="showPopup3" class="popup2" href="http://bookofrecipes.netilfy.app">Book Of Recipes</a>
+      <a v-show="showPopup3" class="popup2" href="https://bookofrecipes.netlify.app/">Book Of Recipes</a>
     </Transition>
     <Transition name="fadein">
       <a v-show="showPopup3" class="popup3" href="https://aevio-ch5.netlify.app/">Crestron HTML5</a>
