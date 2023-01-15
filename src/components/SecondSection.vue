@@ -1,6 +1,7 @@
 <template>
+  <div class="card">
     <div ref="myElement" class="animate-on-scroll img2-cont">
-<img src="../assets/DALLE2.png" alt="satoshi" class="img2">
+<img src="../assets/cybershiba3.png" alt="satoshi" class="img2">
     </div>
     <div class="sub_list">
     <div class="sub_text">Custom Crestron Interfaces</div>
@@ -8,6 +9,10 @@
     <div class="sub_text t3">Integrated Cue Server DMX Projects</div>
     <div class="sub_text t4">Control4 Drivers in Lua Script</div>
   </div>
+</div>
+  <div class="img3_cont">
+  <img src="../assets/yarnshiba.png" alt="satoshi" class="img3" />
+</div>
   <div class="projects">
     <div class="link" v-on:mouseover="showPopup2()">Projects</div>
     <Transition name="fadein">
@@ -53,13 +58,20 @@ setTimeout(() => {
 </script>
 
 <style scoped>
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20%;
+}
 .img2-cont {
   width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 40%;
+
 }
 
 .img2 {
@@ -72,6 +84,29 @@ setTimeout(() => {
   opacity: 0.2;
   border-radius: 40%;
   box-shadow: -5px 5px 18px rgba(1, 161, 224, 0.75);
+}
+
+.img3-cont {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100%;
+}
+
+.img3 {
+  width: 40vw;
+  height: auto;
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.2;
+  border-radius: 40%;
+  box-shadow: -5px 5px 18px rgba(1, 161, 224, 0.75);
+  margin-left: 22%;
+  margin-top: 22%;
 }
  .sub_text {
   font-family: 'raleway', serif;
@@ -102,7 +137,7 @@ setTimeout(() => {
   cursor: pointer;
   max-width: max-content;
   right: -40%;
-  margin-top: 30%;
+  margin-top: 5%;
   padding-top: 10%;
   padding-bottom: 10%;
 }

@@ -1,7 +1,7 @@
 <template>
   <div class="img-cont">
     <transition name="slide-fade">
-<img v-show="cue2" src="../assets/DALLE1.png" alt="satoshi shiba inu" class="img satoshi"/>
+<img v-show="cue2" src="../assets/cybershiba.png" alt="satoshi shiba inu" class="img satoshi"/>
 </transition>
   </div>
   <video autoplay muted loop class="img2"> <source src="../assets/Grid.mp4" type="video/mp4" /></video>
@@ -16,9 +16,6 @@
     <h2 v-show="cue3" class="sub">Software Engineer | Automation Programmer | UI Designer</h2>
   </transition>
 </div>
-  <transition name="slide-fade">
-    <img v-show="cue4" src="../assets/shiba1.jpg" alt="satoshi shiba inu" class="img satoshi"/>
-</transition>
   </header>
 </template>
 
