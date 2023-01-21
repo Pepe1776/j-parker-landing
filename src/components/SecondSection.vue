@@ -1,7 +1,7 @@
 <template>
   <div class="card">
     <div ref="myElement" class="animate-on-scroll img2-cont">
-<img src="../assets/cybershiba3.png" alt="satoshi" class="img2">
+<img src="../assets/cybershiba3.jpg" alt="satoshi" class="img2">
     </div>
     <div class="sub_list">
     <div class="sub_text">Custom Crestron Interfaces</div>
@@ -11,7 +11,7 @@
   </div>
 </div>
   <div class="img3_cont">
-  <img src="../assets/yarnshiba.png" alt="satoshi" class="img3" />
+  <img src="../assets/yarnshiba.jpg" alt="satoshi" class="img3" />
 </div>
   <div class="projects">
     <div class="link" v-on:mouseover="showPopup2()">Projects</div>
@@ -23,7 +23,7 @@
     </Transition>
   </div>
   <div class="img4_cont">
-  <img src="../assets/cybershiba2.png" alt="satoshi" class="img4" />
+  <img src="../assets/cybershiba2.jpg" alt="satoshi" class="img4" />
 </div>
   <div class="link" v-on:mouseover="showPopup1()">Link Up</div>
   <div class="btn_cont_popup">

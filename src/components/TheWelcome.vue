@@ -1,7 +1,7 @@
 <template>
   <div class="img-cont">
     <transition name="slide-fade">
-<img v-show="cue2" src="../assets/cybershiba.png" alt="satoshi shiba inu" class="img satoshi"/>
+<img v-show="cue2" src="../assets/cybershiba.jpg" alt="satoshi shiba inu" class="img satoshi"/>
 </transition>
   </div>
   <video autoplay muted loop class="img2"> <source src="../assets/Grid.mp4" type="video/mp4" /></video>
