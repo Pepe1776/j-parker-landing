@@ -138,18 +138,21 @@ setTimeout(() => {
 }
  .sub_text {
   font-family: 'raleway', serif;
-  font-size: 1.8vw;
+  font-size: 1.6vw;
   color: rgb(105, 105, 105);
   text-shadow: 0px 0px 25px rgb(1, 183, 255);
-
   text-align: center;
-  display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 5%;
+  display: inline-block;
+  margin-top: 5%;
 }
  .sub_list {
   padding: 5%;
+  display: block;
+  flex-direction: column;
+  text-align: center;
+
 }
 .link {
   font-family: 'raleway', serif;
