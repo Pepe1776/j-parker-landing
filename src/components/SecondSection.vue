@@ -5,7 +5,7 @@
     </div>
     <div class="sub_list">
     <div class="sub_text">Custom Crestron Interfaces</div>
-    <div class="sub_text t2">Personalized Control Icons</div>
+    <div class="sub_text t2">Personalized Control4 Icons</div>
     <div class="sub_text t3">Integrated Cue Server DMX Projects</div>
     <div class="sub_text t4">Control4 Drivers in Lua Script</div>
   </div>
